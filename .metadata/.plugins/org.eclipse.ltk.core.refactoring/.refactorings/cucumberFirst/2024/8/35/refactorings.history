@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;cucumberFirst/src/main/java/features/loginPage.feature&apos; to &apos;GoogleHomeTester.feature&apos;" description="Rename resource &apos;loginPage.feature&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/features/loginPage.feature" name="GoogleHomeTester.feature" stamp="1724752310092" updateReferences="true"/>
+</session>

@@ -1,0 +1,14 @@
+package Login;
+
+import org.openqa.selenium.WebDriver;
+
+public class ActiTimeLogin {
+
+	WebDriver driver;
+	
+	public void UserLaunchWebBrowser() {
+		
+	}
+	
+	
+}
