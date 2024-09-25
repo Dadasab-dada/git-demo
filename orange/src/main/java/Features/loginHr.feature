@@ -16,13 +16,9 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-
 Feature: OrangeHrm login functionality
 
-
-  
-  Scenario: Login page functions
+  Scenario: Orange Hrm Login page functions
     Given user launch browser
-    When  user enter valid username and password
+    When user enter valid username and password
     Then user click on login button
-   
