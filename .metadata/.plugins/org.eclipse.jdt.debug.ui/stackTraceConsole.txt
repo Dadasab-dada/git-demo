@@ -1,38 +1,18 @@
-io.cucumber.junit.UndefinedStepException: The step 'user click admin element' and 6 other step(s) are undefined.
+io.cucumber.junit.UndefinedStepException: The step 'user is on login page' and 2 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
 
-@Given("user click admin element")
-public void user_click_admin_element() {
+@Given("user is on login page")
+public void user_is_on_login_page() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@When("enter system username")
-public void enter_system_username() {
+@When("user enters username and password")
+public void user_enters_username_and_password() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@When("click userrole dropdown and select userrole")
-public void click_userrole_dropdown_and_select_userrole() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("enter employe name")
-public void enter_employe_name() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("click status dropdown")
-public void click_status_dropdown() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When("user select status if any")
-public void user_select_status_if_any() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("click on search button")
-public void click_on_search_button() {
+@When("clicks on login button")
+public void clicks_on_login_button() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }

@@ -28,13 +28,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="HRMOrange.HRMOrange"/>
+			<item value="actitimeTestProject.actitimeTestProject"/>
 		</list>
 		<list key="groupId">
-			<item value="HRMOrange"/>
+			<item value="actitimeTestProject"/>
 		</list>
 		<list key="artifactId">
-			<item value="HRMOrange"/>
+			<item value="actitimeTestProject"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

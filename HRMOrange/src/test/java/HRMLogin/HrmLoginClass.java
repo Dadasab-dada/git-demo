@@ -6,13 +6,14 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
 
 import HRMUtility.HRM1;
 import io.cucumber.java.After;
 
 public class HrmLoginClass implements HRM1 {
 
-	private static WebDriver driver;
+	//WebDriver driver;
 
 //	public HrmLoginClass() {
 //		if (driver == null) {
@@ -22,17 +23,29 @@ public class HrmLoginClass implements HRM1 {
 //		}
 //	}
 
-	public void userlaunchBrowser() throws Exception {
-		// driver = new ChromeDriver();
-		if (driver == null) {
-			driver = new ChromeDriver();
-		
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		driver.get(base_URL);
-		Thread.sleep(20);
-		}
-	}
+	WebDriver driver;
+
+    public HrmLoginClass(WebDriver driver) {
+        // No-argument constructor for Cucumber
+    	this.driver=driver;
+    	PageFactory.initElements(driver, this);
+    }
+
+//    public void setDriver(WebDriver driver) {
+//        this.driver = driver;
+//    }
+	
+//	public void userlaunchBrowser() throws Exception {
+//		// driver = new ChromeDriver();
+//		if (driver == null) {
+//			driver = new ChromeDriver();
+//		
+//		driver.manage().window().maximize();
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+//		driver.get(base_URL);
+//		Thread.sleep(20);
+//		}
+//	}
 
 	public void enterValidCredentials(String username, String password) throws Exception {
 		driver.findElement(enter_username).sendKeys("Admin");
@@ -50,25 +63,26 @@ public class HrmLoginClass implements HRM1 {
 		// driver.close();
 	}
 	
-	public void userclickonAdmin() throws Exception {
-		List<WebElement> Allsuggest=driver.findElements(admi_click);
-		for(int i=0; i< Allsuggest.size();i++) {
-			String expResult="admin";
-			if(Allsuggest.get(i).getText().equalsIgnoreCase(expResult)) {
-				Allsuggest.get(i).click();
-				break;
-			}
-		}
+//	public void userclickonAdmin() throws Exception {
+//		driver.findElement(admi_click).click();
+//		List<WebElement> Allsuggest=driver.findElements(admi_click);
+//		for(int i=0; i< Allsuggest.size();i++) {
+//			String expResult="admin";
+//			if(Allsuggest.get(i).getText().equalsIgnoreCase(expResult)) {
+//				Allsuggest.get(i).click();
+//				break;
+//			}
+//		}
 //		Thread.sleep(2000);
 //		driver.findElement(admi_click).click();
-		Thread.sleep(2000);
-	}
-	@After
-	public void userreturnBackToDashBoard() throws Exception {
-		Thread.sleep(2000);
-		//driver.navigate().back();
-		driver.findElement(dash_click).click();
-	}
+		//Thread.sleep(2000);
+//	}
+//	@After
+//	public void userreturnBackToDashBoard() throws Exception {
+//		Thread.sleep(2000);
+//		//driver.navigate().back();
+//		driver.findElement(dash_click).click();
+//	}
 	
-
+	
 }

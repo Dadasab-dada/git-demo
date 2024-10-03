@@ -23,18 +23,16 @@ Feature: OrangeHrm Feature Functionality
     And user enter username "Admin" and password "admin123"
     Then user click on login button
 
-    Scenario: Functionl work on dashboard
-    Given user click on admin
-    Then user navigate to dashboard
-    
-    
-    Scenario: system user search functionality
+ ## Scenario: Functionl work on dashboard
+  ##  Given user click on admin
+   ## Then user navigate to dashboard
+
+  Scenario: system user search functionality
     Given user click admin element
     When enter system username
-    And click userrole dropdown 
+    And click userrole dropdown
+    Then select the role from dropdwon
     And enter employe name
-    And click status dropdown 
-    And user select status if any
+    And click status dropdown
+    Then select status from dropdown
     Then click on search button
-    
-

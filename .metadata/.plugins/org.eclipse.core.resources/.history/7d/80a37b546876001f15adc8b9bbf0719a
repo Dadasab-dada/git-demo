@@ -1,7 +1,0 @@
-package utility;
-
-public interface ActiTimeURL {
-	
-	String base_url= "https://online.actitime.com/na14/login.do";
-
-}
